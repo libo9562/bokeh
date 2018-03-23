@@ -331,6 +331,21 @@ Examples:
 
 """)
 
+    hex_tile = _glyph_function(glyphs.HexTile, """
+Examples:
+
+    .. bokeh-plot::
+        :source-position: above
+
+        from bokeh.plotting import figure, output_file, show
+
+        plot = figure(plot_width=300, plot_height=300)
+        plot.hex_tile(x=[1, 2, 3], y=[1, 2, 3], size=[10,20,30], color="#74ADD1")
+
+        show(plot)
+
+""")
+
     image = _glyph_function(glyphs.Image, """
 .. note::
     If both ``palette`` and ``color_mapper`` are passed, a ``ValueError``
